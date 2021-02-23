@@ -1,4 +1,4 @@
-#basic of python
+##basic of python
 # def add_two_values(first,second):
 #     return first + second
 #
@@ -28,7 +28,7 @@
 
 
 
-#basic operation of Python
+##basic operation of Python
 
 # number_value = 44
 # second_value =3
@@ -58,7 +58,7 @@
 
 
 
-#list operation of python
+##list operation of python
 # grocery_list = ["rice","potato","tomato"]
 # print(grocery_list)
 # grocery_list.append("new")
@@ -77,14 +77,15 @@
 # grocety_number = [6,564,6674,45,6,7,8,9,56]
 # grocety_number.sort()
 # print(grocety_number)
+#
 
+##Condition in pyhon
 
-#Condition in pyhon
 
 your_marks = input('what is your marks in programmin')
 def show_grade(grade):
     print(f"You got :")
 if your_marks>80:
-    print('you got A+')
+    show_grade(grade)
 
 elif your_marks <
