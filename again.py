@@ -82,10 +82,16 @@
 ##Condition in pyhon
 
 
-your_marks = input('what is your marks in programmin')
+your_marks = int(input('what is your marks in programmin'))
 def show_grade(grade):
-    print(f"You got :")
-if your_marks>80:
-    show_grade(grade)
+    print(f"You got : {grade}")
+if your_marks>=80:
+    show_grade("A+")
 
-elif your_marks <
+elif your_marks <80 and your_marks >=70:
+    show_grade("A")
+elif your_marks <70 and your_marks >=60:
+    show_grade("A-")
+else:
+    show_grade("F-")
+print("Finished")
