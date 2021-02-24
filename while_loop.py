@@ -4,14 +4,11 @@ def is_even(number):
     else:
         return False
 
-
-starting =0
+even_numbers = []
+starting = 0
 while starting < 100:
     if is_even(starting):
-        print(f"{starting} is Even")
-    else:
-        print(f"{starting} is odd")
-    starting = starting+ 1
+        even_numbers.append(starting)
+    starting = starting + 1
 
-print("Finish")
-
+print(f"{even_numbers}")
