@@ -77,21 +77,49 @@
 # grocety_number = [6,564,6674,45,6,7,8,9,56]
 # grocety_number.sort()
 # print(grocety_number)
-#
+
 
 ##Condition in pyhon
+# your_marks = int(input('what is your marks in Programming'))
+# def show_grade(grade):
+#     print(f"You got : {grade}")
+# if your_marks>=80:
+#     show_grade("A+")
+#
+# elif your_marks <80 and your_marks >=70:
+#     show_grade("A")
+# elif your_marks <70 and your_marks >=60:
+#     show_grade("A-")
+# else:
+#     show_grade("F-")
+# print("Finished")
+
+##or
+# if your_marks > 80 or your_marks<10:
+#     print("You are very good or very bad")
+#     if your_marks > 80:
+#         print("You are Excellent")
+#     else:
+#         print("not so good")
+#
+# else:
+#     print("You are okey")
+# print("Finish")
+#
 
 
-your_marks = int(input('what is your marks in programmin'))
-def show_grade(grade):
-    print(f"You got : {grade}")
-if your_marks>=80:
-    show_grade("A+")
+## boolian
 
-elif your_marks <80 and your_marks >=70:
-    show_grade("A")
-elif your_marks <70 and your_marks >=60:
-    show_grade("A-")
-else:
-    show_grade("F-")
-print("Finished")
+# number = int(input("Give a number: "))
+#
+# the_user_is_good = number >= 80
+# message = "The number is greater than or equal to 80: "+ str(the_user_is_good)
+# print(message)
+#
+
+
+
+
+
+
+##Loop
