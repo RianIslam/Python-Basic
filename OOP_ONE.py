@@ -2,11 +2,13 @@ def method_name(a,b):
     print("A method")
 
 class Person:
-    def __init__(self,person_name,date_of_birth,ht):
+    def __init__(self,person_name: str,date_of_birth: int,ht :int):
         self.name =person_name
         self.date_of_birth = date_of_birth
         self.height = ht
 
+    def get_year_of_birth(self):
+        return self.date_of_birth
 
 
     def get_name(self):
@@ -18,19 +20,20 @@ class Person:
     def set_name(self,new_name):
         if self.__has_any_number(new_name):
             print("Sorry person name can't have number")
-            return
-        self.name = new_name
 
-    def __has_any_number(self,string):
-        return  "0" in string
-method_name(23,45)
+    # def __has_any_number(self,string):
+    #     return  "0" in string
 
-a_person = Person("Rian Islam", "1009", "6 feet")
+class Student(Person):
+    def __init__(self,person_name:str,date_of_birth: int,email_id:str,student_id:str):
+        super().__init__(person_name,date_of_birth)
+        self.id = student_id
+        self.email = email_id
 
-print(a_person.get_summary())
-a_person.set_name("rian islam rian")
+    def get_summary(self):
+        return f"Name{self.get_name()} Email: {self.email} Birth:{self.date_of_birth()}"
 
-print(a_person.get_summary())
-print(a_person.date_of_birth)
-a_person.set_name("0rian")
-print(a_person.name)
+student = Student("A",3000,"a@google.com","123435435")
+print(student.get_summary())
+student.set_name("rian")
+print(student.get_summary())
